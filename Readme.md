@@ -2,6 +2,7 @@
 
 * Студент: [Дарья Емельянова](https://up.htmlacademy.ru/htmlcss-individual/2/user/2418127).
 * Наставник: `Неизвестно`.
+* Сайт: [Мой проект Седона](https://dariafrast666.github.io/2418127-sedona-2/)
 
 ---
 
