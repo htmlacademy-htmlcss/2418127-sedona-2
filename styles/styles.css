@@ -1,0 +1,206 @@
+@font-face {
+  font-family:  "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family:  "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  background-color: #ffffff;
+  color: #333333;
+}
+
+.page-header {
+  color: #000000;
+}
+
+.main-nav__link {
+  color: #000000;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.main-nav__item {
+  list-style-type: none;
+}
+
+.button {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+button.button {
+  font-family: "PT Sans", sans-serif;
+  border: none;
+}
+
+.button-brown {
+  color: #ffffff;
+  background-color: #756157;
+}
+
+.button-blue {
+  background-color: #82B3D3;
+  color: #ffffff;
+}
+
+.hero {
+  background-color: #ADD8E6;
+  background-image: url("../images/hero_mountains.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+.title {
+  font-size: 30px;
+  line-height: 36px;
+  color: #000000;
+}
+
+.description {
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.background-blue {
+   background-color: #82B3D3;
+   color: #FFFFFF;
+}
+
+.background-extralightblue {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.background-lightblue {
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
+.fact__title {
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.service-item__title {
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.big-button {
+    font-family: "PT Sans", sans-serif;
+    border: none;
+    color: #FFFFFF;
+    font-size: 20px;
+    line-height: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.advantages__list, .service__list, .social-list, .catalog-cards, .breadcrumbs, .pagination {
+  list-style-type: none;
+}
+
+.inner-header {
+  background-color: #965536;
+  background-image: url("../images/filter.jpg");
+  background-size: 100% auto;
+}
+
+.inner-header__title {
+  font-size: 60px;
+  line-height: 78px;
+  color: #ffffff;
+}
+
+.breadcrumbs__link {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.form-catalog__group {
+  border: none;
+}
+
+.form-catalog__title {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.form-catalog__description {
+  color: #ffffff;
+}
+
+.form-catalog__button {
+  color: #ffffff;
+}
+
+.button-transparent {
+  background-color: transparent;
+}
+
+.sorting__title {
+  text-transform: uppercase;
+}
+
+.sorting__select {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.catalog-card__link-title {
+  text-decoration: none;
+  color: #000000;
+}
+
+.catalog-card__title {
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.catalog-card__rate {
+  background-color: #F2F2F2;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.pagination-link {
+  text-decoration: none;
+  color: #ffffff;
+  background-color:  #82B3D3;
+}
+
+.pagination-link--current {
+  color: #000000;
+  background-color: #F2F2F2;
+}
+
+.pagination-link--dots {
+  background-color: transparent;
+  color: #000000;
+}
+
+.page-footer__phone {
+  color: #000000;
+  text-decoration: none;
+  font-size: 40px;
+  line-height: 40px;
+}
