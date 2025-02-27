@@ -19,7 +19,7 @@ html {
 }
 
 body {
-
+  margin: 0;
   height: 100%;
 
   font-family: "PT Sans", sans-serif;
@@ -46,11 +46,13 @@ body {
 }
 
 .main-nav__link {
+  display: block;
   color: #000000;
   text-decoration: none;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
+  padding: 20px 16px;
 }
 
 .main-nav__item {
@@ -85,6 +87,8 @@ button.button {
   background-image: url("../images/hero_mountains.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
+  padding-top: 51px;
+  padding-bottom: 82px;
 }
 
 .title {
@@ -210,6 +214,16 @@ button.button {
   text-decoration: none;
   color: #ffffff;
   background-color:  #82B3D3;
+  min-width: 60px;
+  height: 60px;
+  display: block;
+  padding: 12px 16px;
+  box-sizing: border-box;
+  text-align: center;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
 }
 
 .pagination-link--current {
@@ -233,15 +247,20 @@ button.button {
   display: flex;
   width: 1060px;
   margin: 0 auto;
+  column-gap: 30px;
 }
 
 .main-nav__list {
   padding: 0;
   margin: 0;
   width: 450px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .main-nav__user {
+  display: flex;
+  flex-wrap: wrap;
   padding: 0;
   margin: 0;
   max-width: 300px;
@@ -262,6 +281,7 @@ button.button {
 
 .fact {
   display: flex;
+  width: 1200px;
 }
 
 .advantages__item {
@@ -292,4 +312,116 @@ button.button {
 
 .search {
   text-align: center;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.main-nav__logo {
+  margin-bottom: -6px;
+}
+
+.main-nav__user .main-nav__link {
+  min-width: 20px;
+  min-height: 20px;
+}
+
+.main-nav__button {
+  display: block;
+  padding: 8px 50px;
+  border-radius: 4px;
+  margin: 14px 0 20px;
+}
+
+.advantages__title {
+  margin-top: 69px;
+  margin-bottom: 25px;
+}
+
+.advantages__description {
+  margin-top: 0;
+  margin-bottom: 90px;
+}
+
+.service__title {
+  margin-top: 64px;
+  margin-bottom: 20px;
+}
+
+.service__description {
+  margin-bottom: 64px;
+}
+
+.search__title {
+  margin-top: 96px;
+  margin-bottom: 20px;
+}
+
+.search__description {
+  margin-top: 0;
+  margin-bottom: 54px;
+}
+
+.subscribe-main {
+  background-color: #2f4f4f;
+  color: #ffffff;
+  background-image: url("../images/subscribe.jpg");
+  background-size: 100% auto;
+}
+
+.subscribe {
+  padding-top: 96px;
+  padding-bottom: 104px;
+}
+
+.subscribe-main .subscribe__title {
+  color: #ffffff;
+}
+
+.search__button {
+  margin-bottom: 96px;
+}
+
+.social-link {
+  display: block;
+  min-width: 24px;
+  min-height: 20px;
+}
+
+.inner-header__title {
+  margin: 0;
+}
+
+.inner-header {
+  padding: 35px 70px 70px;
+}
+
+.pagination {
+  padding: 0;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.pagination-link--dots {
+  font-weight: 400;
+  font-size: 22px;
+}
+
+.page-footer {
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+
+.social-list {
+  margin: 0;
+  padding: 0;
 }
