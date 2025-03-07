@@ -75,6 +75,7 @@ button.button {
 .button-brown {
   color: #ffffff;
   background-color: #756157;
+  border-radius: 4px;
 }
 
 .button-blue {
@@ -336,9 +337,8 @@ button.button {
 
 .main-nav__button {
   display: block;
-  padding: 8px 50px;
-  border-radius: 4px;
   margin: 14px 0 20px;
+  padding: 8px 50px;
 }
 
 .advantages__title {
@@ -424,4 +424,64 @@ button.button {
 .social-list {
   margin: 0;
   padding: 0;
+}
+
+.main-catalog {
+  width: 1060px;
+  margin: 0 auto;
+}
+
+.catalog-cards {
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 340px 340px 340px;
+  gap: 20px;
+}
+
+.catalog-card {
+  box-shadow: 0 0 0 1px #E6E6E6;
+  border-radius: 4px;
+  display: grid;
+  padding: 20px;
+  grid-template-columns: 140px 140px;
+  column-gap: 20px;
+  row-gap: 16px;
+}
+
+.catalog-card__link-image {
+  grid-column: 1 / -1;
+}
+
+.catalog-card__link-title {
+  grid-column: 1 / -1;
+}
+
+.catalog-card__title {
+  margin: 0;
+}
+
+.catalog-card__type_hotel {
+  margin: 0;
+}
+
+.catalog-card__price {
+  margin: 0;
+  justify-self: end;
+}
+
+.stars {
+  margin: 0;
+}
+
+.catalog-card__rate {
+  text-transform: uppercase;
+  margin: 0;
+  text-align: center;
+  padding: 8px 20px;
+}
+
+.catalog-card .button {
+  text-align: center;
+  padding: 8px 20px;
 }
