@@ -85,11 +85,12 @@ button.button {
 
 .hero {
   background-color: #ADD8E6;
-  background-image: url("../images/hero_mountains.jpg");
+  background-image: url("../images/hero_zigzag.svg"), url("../images/hero_mountains.jpg");
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: contain, 100% auto;
   padding-top: 51px;
   padding-bottom: 82px;
+  background-position: bottom;
 }
 
 .title {
@@ -97,6 +98,7 @@ button.button {
   line-height: 36px;
   color: #000000;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .description {
@@ -121,11 +123,15 @@ button.button {
 .fact__title {
   font-size: 24px;
   line-height: 28px;
+  text-transform: uppercase;
+  margin: 0;
 }
 
 .service-item__title {
   font-size: 24px;
   line-height: 28px;
+  text-transform: uppercase;
+  margin: 0;
 }
 
 .big-button {
@@ -136,6 +142,7 @@ button.button {
     line-height: 36px;
     font-weight: 700;
     text-transform: uppercase;
+    padding: 8px 50px;
 }
 
 .advantages__list, .service__list, .social-list, .catalog-cards, .breadcrumbs, .pagination {
@@ -180,6 +187,10 @@ button.button {
 
 .button-transparent {
   background-color: transparent;
+}
+
+.sorting {
+  display: flex;
 }
 
 .sorting__title {
@@ -309,10 +320,22 @@ button.button {
 
 .subscribe__form {
   text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
-.search {
-  text-align: center;
+.subscribe__input {
+  width: 452px;
+  border: none;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.subscribe--inner .subscribe__input {
+  background-color: #F2F2F2;
 }
 
 .visually-hidden {
@@ -387,7 +410,9 @@ button.button {
 }
 
 .search__button {
+  margin: 0 auto;
   margin-bottom: 96px;
+  display: block;
 }
 
 .social-link {
@@ -484,4 +509,84 @@ button.button {
 .catalog-card .button {
   text-align: center;
   padding: 8px 20px;
+}
+
+.fact__wrapper::before {
+  content: "";
+  width: 60px;
+  height: 2px;
+  display: block;
+  background-color: rgba(255, 255, 255, 0.3);
+  order: 1;
+}
+
+.advantages__item::before {
+  content: "";
+  width: 60px;
+  height: 2px;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.3);
+  order: 1;
+}
+
+.fact__description {
+  order: 2;
+  margin: 0;
+}
+
+.fact__wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  margin: auto 85px;
+  align-items: center;
+  text-align: center;
+}
+
+.advantages__item {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  align-items: center;
+  text-align: center;
+  padding-right: 85px;
+  padding-left: 85px;
+  box-sizing: border-box;
+  justify-content: center;
+}
+
+.service__item::before {
+  content: "";
+  width: 75px;
+  height: 72px;
+  display: block;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.service__item:first-child:before {
+  background-image: url(../images/house.svg);
+}
+
+.service__item:nth-child(2):before {
+  background-image: url(../images/food.svg);
+}
+
+.service__item:last-child:before {
+  background-image: url(../images/gift.svg);
+}
+
+.service__item {
+  padding: 81px 85px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  row-gap: 30px;
+  width: 400px;
+}
+
+.service-item__text {
+  margin: 0;
 }
