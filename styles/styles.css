@@ -101,6 +101,8 @@ button.button {
   padding-bottom: 82px;
   background-position: bottom;
   margin-top: -6px;
+  min-height: 485px;
+  box-sizing: border-box;
 }
 
 .title {
@@ -109,12 +111,8 @@ button.button {
   color: #000000;
   text-align: center;
   text-transform: uppercase;
-}
-
-.description {
-  font-size: 22px;
-  line-height: 26px;
-  text-align: center;
+  margin-left: 70px;
+  margin-right: 70px;
 }
 
 .background-blue {
@@ -181,6 +179,7 @@ button.button {
 .breadcrumbs {
   padding: 0;
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   margin-bottom: 40px;
 }
@@ -261,10 +260,17 @@ button.button {
   padding: 11px 18px;
   margin-left: 130px;
   box-sizing: border-box;
+  background-color: #ffffff;
 }
 
 .sorting__select:hover {
   border-color: #68A2CA;
+}
+
+.sorting__select:disabled {
+  border-color: rgba(0, 0, 0, 0.3);
+  opacity: 0.3;
+  pointer-events: none;
 }
 
 .catalog-card__link-title {
@@ -315,7 +321,7 @@ button.button {
   text-decoration: none;
   font-size: 40px;
   line-height: 40px;
-  margin-left: 10px;
+  margin-left: -40px;
 }
 
 .main-nav {
@@ -338,7 +344,6 @@ button.button {
   flex-wrap: wrap;
   padding: 0;
   margin: 0;
-  max-width: 300px;
   margin-left: auto;
   align-items: center;
 }
@@ -369,6 +374,7 @@ button.button {
   padding: 0;
   margin: 0;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .service__item {
@@ -397,6 +403,10 @@ button.button {
   font-size: 18px;
   line-height: 24px;
   border-radius: 4px 0 0 4px;
+}
+
+.subscribe__input:hover {
+  background-color: #E6E6E6;
 }
 
 .subscribe__button {
@@ -549,6 +559,8 @@ button.button {
   gap: 25px;
   align-items: center;
   margin-left: 10px;
+  flex-wrap: wrap;
+  width: 175px;
 }
 
 .page-footer__develope-logo {
@@ -576,6 +588,7 @@ button.button {
   display: grid;
   padding: 20px;
   grid-template-columns: 140px 140px;
+  grid-template-rows: max-content max-content max-content min-content min-content;
   column-gap: 20px;
   row-gap: 16px;
 }
@@ -656,6 +669,8 @@ button.button {
   margin: auto 85px;
   align-items: center;
   text-align: center;
+  max-width: 230px;
+  box-sizing: border-box;
 }
 
 .advantages__item {
@@ -709,6 +724,7 @@ button.button {
 
 .sorting__switcher {
   display: flex;
+  flex-wrap: wrap;
   column-gap: 8px;
 }
 
@@ -774,7 +790,9 @@ button.button {
 
 .form-catalog {
   display: flex;
+  flex-wrap: wrap;
   column-gap: 70px;
+  row-gap: 40px;
 }
 
 .form-catalog__button-wrapper {
@@ -1089,7 +1107,7 @@ input[type="number"]:focus {
 }
 
 .modal__container-close {
-  /* display: none; */
+   display: none;
 }
 
 .breadcrumbs__item:not(:last-child)::after {
@@ -1175,8 +1193,10 @@ input[type="number"]:focus {
   color: rgba(255, 255, 255, 0.3);
 }
 
-.button-green:disabled, .button-blue:disabled, .button-brown:disabled {
+.button:disabled {
   background-color: #E5E5E5;
+  cursor: default;
+  pointer-events: none;
 }
 
 .button-transparent:disabled {
@@ -1235,8 +1255,21 @@ input[type="number"]:focus {
   opacity: 0.3;
 }
 
-.form-catalog__label:disabled {
+.modal__form input:disabled {
   opacity: 0.1;
+  cursor: default;
+  pointer-events: none;
+}
+
+.subscribe_form input:disabled {
+  opacity: 0.1;
+  pointer-events: none;
+}
+
+.form-catalog label:has(:disabled) {
+  opacity: 0.1;
+  cursor: default;
+  pointer-events: none;
 }
 
 .breadcrumbs__item:not(:last-child) .breadcrumbs__link:hover {
@@ -1307,4 +1340,16 @@ input[type="number"]:focus {
 
 .fact__image.order {
   order: -1;
+}
+
+.fact__image {
+  align-self: center;
+}
+
+.description {
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  margin-left: 70px;
+  margin-right: 70px;
 }
