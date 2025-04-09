@@ -363,10 +363,6 @@ button.button {
 .fact {
   display: flex;
   width: 1200px;
-}
-
-.advantages__item {
-  width: 400px;
   min-height: 385px;
 }
 
@@ -375,10 +371,6 @@ button.button {
   margin: 0;
   display: flex;
   flex-wrap: wrap;
-}
-
-.service__item {
-  min-height: 385px;
 }
 
 .page-footer__wrapper {
@@ -683,6 +675,8 @@ button.button {
   padding-left: 85px;
   box-sizing: border-box;
   justify-content: center;
+  width: 400px;
+  min-height: 385px;
 }
 
 .service__item::before {
@@ -716,6 +710,7 @@ button.button {
   text-align: center;
   row-gap: 30px;
   width: 400px;
+  min-height: 385px;
 }
 
 .service-item__text {
