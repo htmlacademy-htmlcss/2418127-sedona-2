@@ -8,7 +8,7 @@
   </head>
   <body class="page-body">
     <div class="page-body__wrapper">
-      <header class="page-header">
+      <header data-test="header" class="page-header">
         <nav class="main-nav">
           <a href="index.html" class="main-nav__logo">
             <img class="main-nav__logo-image" alt="Логотип сайта Седона" src="images/logo_sedona.svg" width="140" height="70">
@@ -54,7 +54,7 @@
           </ul>
         </nav>
       </header>
-      <main class="page-main main-inner">
+      <main data-test="main" class="page-main main-inner">
         <header class="inner-header">
           <h1 class="inner-header__title">Гостиницы Седоны</h1>
           <ul class="breadcrumbs">
@@ -70,7 +70,7 @@
               <a href="#" class="breadcrumbs__link">Гостиницы</a>
             </li>
           </ul>
-          <form class="form-catalog" action="https://echo.htmlacademy.ru/" method="get">
+          <form data-test="filter" class="form-catalog" action="https://echo.htmlacademy.ru/" method="get">
 
             <fieldset class="form-catalog__group">
 
@@ -146,7 +146,7 @@
           </form>
         </header>
 
-        <section class="main-catalog">
+        <section data-test="catalog" class="main-catalog">
           <div class="sorting">
             <h2 class="sorting__title">Найдено гостиниц: 38</h2>
             <select class="sorting__select" aria-label="Сортировка">
@@ -259,7 +259,7 @@
 
           </ul>
         </section>
-        <section class="subscribe subscribe--inner">
+        <section data-test="subscribe" class="subscribe subscribe--inner">
           <h2 class="subscribe__title title">Подпишитесь на рассылку</h2>
           <p class="subscribe__description description">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
           <form class="subscribe__form"  action="https://echo.htmlacademy.ru/" method="get">
@@ -269,7 +269,7 @@
           </form>
         </section>
       </main>
-      <footer class="page-footer">
+      <footer data-test="footer" class="page-footer">
         <div class="page-footer__wrapper">
           <ul class="social-list">
             <li class="social-item">

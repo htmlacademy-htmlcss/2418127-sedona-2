@@ -74,7 +74,7 @@ body {
   text-decoration: none;
 }
 
-button {
+.button {
   font-family: "PT Sans", sans-serif;
   border: none;
 }
@@ -776,7 +776,7 @@ button {
 .main-nav__favorite {
   border-radius: 50%;
   background-color: #7db54f;
-  color: #FFFFFF;
+  color: #ffffff;
   padding: 4px 5px;
   font-size: 10px;
   line-height: 10px;
